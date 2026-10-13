@@ -10,4 +10,4 @@ export function el(tag, props = {}, ...kids) {
   for (const kid of kids.flat()) if (kid != null && kid !== false) n.append(kid);
   return n;
 }
-export const img = (name, alt, cls) => el('img', { src: `assets/${name}`, alt, class: cls });
+export const img = (name, alt, cls) => el('img', { src: `assets/${name}`, alt, class: cls, draggable: 'false' });

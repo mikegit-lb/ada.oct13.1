@@ -1,7 +1,12 @@
 import { mountMultipleChoice } from './multipleChoice.js';
 import { mountDragFill } from './dragFill.js';
 
+import { mountSort } from './sort.js';
+import { mountBuildSentence } from './buildSentence.js';
+
 const registry = {
+  sort: mountSort,
+  buildSentence: mountBuildSentence,
   multipleChoice: mountMultipleChoice,
   dragFill: mountDragFill,
 };
