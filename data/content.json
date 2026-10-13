@@ -31,7 +31,8 @@
       "Hi! I'm Pip the fox! 🦊",
       "Look! A torn map in the tree!",
       "Help me find the pieces! Tap to play!"
-     ]
+     ],
+     "est": 30
     },
     {
      "kind": "activity",
@@ -59,7 +60,8 @@
       "Look for orange fur!",
       "The fox has a big tail.",
       "Tap the orange animal."
-     ]
+     ],
+     "est": 25
     },
     {
      "kind": "activity",
@@ -87,7 +89,8 @@
       "Look for green leaves!",
       "The map hangs on a tree.",
       "Tap the tall green thing."
-     ]
+     ],
+     "est": 25
     },
     {
      "kind": "activity",
@@ -115,7 +118,8 @@
       "Look for falling water!",
       "Water comes down from high.",
       "Tap the blue falling water."
-     ]
+     ],
+     "est": 25
     },
     {
      "kind": "activity",
@@ -143,7 +147,219 @@
       "A boat goes on water!",
       "Look for the little sail.",
       "Tap the brown boat."
-     ]
+     ],
+     "est": 25
+    },
+    {
+     "kind": "story",
+     "image": "map.svg",
+     "alt": "A treasure map",
+     "lines": [
+      "Good job! Now let us walk in the forest!",
+      "Look for animals and places!",
+      "Tap the right picture or word!"
+     ],
+     "est": 30
+    },
+    {
+     "kind": "activity",
+     "type": "multipleChoice",
+     "prompt": "Tap the FROG!",
+     "options": [
+      {
+       "id": "frog",
+       "label": "frog",
+       "image": "frog.svg"
+      },
+      {
+       "id": "fox",
+       "label": "fox",
+       "image": "fox.svg"
+      },
+      {
+       "id": "bird",
+       "label": "bird",
+       "image": "bird.svg"
+      }
+     ],
+     "answer": "frog",
+     "hints": [
+      "Look for a green animal!",
+      "The frog lives near water.",
+      "Tap the green frog."
+     ],
+     "est": 25
+    },
+    {
+     "kind": "activity",
+     "type": "multipleChoice",
+     "prompt": "Tap the HILL!",
+     "options": [
+      {
+       "id": "hill",
+       "label": "hill",
+       "image": "hill.svg"
+      },
+      {
+       "id": "tree",
+       "label": "tree",
+       "image": "tree.svg"
+      },
+      {
+       "id": "cave",
+       "label": "cave",
+       "image": "cave.svg"
+      }
+     ],
+     "answer": "hill",
+     "hints": [
+      "Look for a big green mountain!",
+      "A hill has high ground.",
+      "Tap the big hill."
+     ],
+     "est": 25
+    },
+    {
+     "kind": "activity",
+     "type": "multipleChoice",
+     "prompt": "Tap the CAVE!",
+     "options": [
+      {
+       "id": "cave",
+       "label": "cave",
+       "image": "cave.svg"
+      },
+      {
+       "id": "hill",
+       "label": "hill",
+       "image": "hill.svg"
+      },
+      {
+       "id": "river",
+       "label": "river",
+       "image": "river.svg"
+      }
+     ],
+     "answer": "cave",
+     "hints": [
+      "Look for a dark hole in the rock!",
+      "A cave looks dark inside.",
+      "Tap the dark cave."
+     ],
+     "est": 25
+    },
+    {
+     "kind": "activity",
+     "type": "multipleChoice",
+     "prompt": "Tap the KITE!",
+     "options": [
+      {
+       "id": "kite",
+       "label": "kite",
+       "image": "kite.svg"
+      },
+      {
+       "id": "bird",
+       "label": "bird",
+       "image": "bird.svg"
+      },
+      {
+       "id": "boat",
+       "label": "boat",
+       "image": "boat.svg"
+      }
+     ],
+     "answer": "kite",
+     "hints": [
+      "A kite goes up in the sky!",
+      "It has a long string.",
+      "Tap the red kite."
+     ],
+     "est": 25
+    },
+    {
+     "kind": "activity",
+     "type": "multipleChoice",
+     "prompt": "Pick the word for the picture!",
+     "image": "river.svg",
+     "alt": "A blue river in the forest",
+     "options": [
+      {
+       "id": "river",
+       "label": "river"
+      },
+      {
+       "id": "tree",
+       "label": "tree"
+      },
+      {
+       "id": "cave",
+       "label": "cave"
+      }
+     ],
+     "answer": "river",
+     "hints": [
+      "Look at the blue water!",
+      "Water that moves down the forest.",
+      "The word: river."
+     ],
+     "est": 30
+    },
+    {
+     "kind": "activity",
+     "type": "multipleChoice",
+     "prompt": "Pick the word for the picture!",
+     "image": "bird.svg",
+     "alt": "A small bird with wings",
+     "options": [
+      {
+       "id": "bird",
+       "label": "bird"
+      },
+      {
+       "id": "frog",
+       "label": "frog"
+      },
+      {
+       "id": "fox",
+       "label": "fox"
+      }
+     ],
+     "answer": "bird",
+     "hints": [
+      "Look at the wings!",
+      "It sings in the tree.",
+      "The word: bird."
+     ],
+     "est": 30
+    },
+    {
+     "kind": "activity",
+     "type": "multipleChoice",
+     "prompt": "Pick the word for the picture!",
+     "image": "map.svg",
+     "alt": "A treasure map",
+     "options": [
+      {
+       "id": "map",
+       "label": "map"
+      },
+      {
+       "id": "kite",
+       "label": "kite"
+      },
+      {
+       "id": "boat",
+       "label": "boat"
+      }
+     ],
+     "answer": "map",
+     "hints": [
+      "It shows where to go!",
+      "Pip needs it for the treasure.",
+      "The word: map."
+     ],
+     "est": 30
     }
    ]
   },
@@ -168,7 +384,8 @@
      "badge": {
       "en": "NOW",
       "tr": "Şimdi"
-     }
+     },
+     "est": 53
     },
     {
      "kind": "activity",
@@ -197,7 +414,8 @@
       "One bird? Then use is.",
       "Many frogs? Then use are.",
       "The bird is flying. The frogs are swimming."
-     ]
+     ],
+     "est": 44
     },
     {
      "kind": "activity",
@@ -226,7 +444,8 @@
       "Many monkeys? Use are.",
       "One fox? Use is.",
       "The monkeys are eating. The fox is running."
-     ]
+     ],
+     "est": 44
     },
     {
      "kind": "activity",
@@ -256,7 +475,22 @@
       "I always goes with am.",
       "Pip and I means two people. Use are.",
       "I am looking. Pip and I are walking."
-     ]
+     ],
+     "est": 44
+    },
+    {
+     "kind": "teach",
+     "image": "sun-now.svg",
+     "alt": "A sun and a clock for now",
+     "title": "Watch the -ing spelling!",
+     "bullets": [
+      "Most verbs: just add ing. look → looking.",
+      "Ends with e? Drop the e. make → making.",
+      "Short word with one vowel + one consonant? Double it. swim → swimming.",
+      "Now check: Pip is swimming. We are making a map."
+     ],
+     "formula": "Subject + am/is/are + Verb-ing",
+     "est": 53
     },
     {
      "kind": "activity",
@@ -278,7 +512,8 @@
       "Start with The.",
       "Then fox, is, running.",
       "The fox is running now."
-     ]
+     ],
+     "est": 50
     },
     {
      "kind": "activity",
@@ -300,7 +535,8 @@
       "Start with The.",
       "Many birds? Use are.",
       "The birds are singing now."
-     ]
+     ],
+     "est": 50
     },
     {
      "kind": "activity",
@@ -325,7 +561,10 @@
       "Swim ends with m. Double the m!",
       "swim → swimm + ing.",
       "The answer: swimming."
-     ]
+     ],
+     "tag": "spelling",
+     "verb": "swim",
+     "est": 25
     },
     {
      "kind": "activity",
@@ -350,7 +589,609 @@
       "Make ends with e. Drop the e!",
       "make → mak + ing.",
       "The answer: making."
-     ]
+     ],
+     "tag": "spelling",
+     "verb": "make",
+     "est": 25
+    },
+    {
+     "kind": "activity",
+     "type": "multipleChoice",
+     "prompt": "run + ing = ?",
+     "tag": "spelling",
+     "verb": "run",
+     "options": [
+      {
+       "id": "running",
+       "label": "running"
+      },
+      {
+       "id": "runing",
+       "label": "runing"
+      },
+      {
+       "id": "runnin",
+       "label": "runnin"
+      }
+     ],
+     "answer": "running",
+     "hints": [
+      "Short word, one vowel and one consonant? Double the last letter!",
+      "run → runn + ing.",
+      "The answer: running."
+     ],
+     "est": 25
+    },
+    {
+     "kind": "activity",
+     "type": "multipleChoice",
+     "prompt": "Pick the right word: The frogs ___ swimming now.",
+     "tag": "agreement",
+     "person": "pl",
+     "sentence": "The frogs ___ swimming now.",
+     "options": [
+      {
+       "id": "is",
+       "label": "is"
+      },
+      {
+       "id": "are",
+       "label": "are"
+      },
+      {
+       "id": "am",
+       "label": "am"
+      }
+     ],
+     "answer": "are",
+     "hints": [
+      "Count the animals or people first.",
+      "Many frogs? Use are.",
+      "The answer: are."
+     ],
+     "est": 25
+    },
+    {
+     "kind": "activity",
+     "type": "dragFill",
+     "prompt": "Practice: Drag am, is or are into the blanks!",
+     "images": [
+      "s-pip-swim.svg"
+     ],
+     "alts": [
+      "Pip swimming in a river"
+     ],
+     "template": "Pip {0} swimming right now.\nThe frogs {1} jumping.",
+     "people": [
+      "sg",
+      "pl"
+     ],
+     "answers": [
+      "is",
+      "are"
+     ],
+     "chips": [
+      "is",
+      "are",
+      "am"
+     ],
+     "hints": [
+      "One name? Pip is one. Use is.",
+      "Many frogs? Use are.",
+      "Pip is swimming. The frogs are jumping."
+     ],
+     "tag": "practice",
+     "est": 44
+    },
+    {
+     "kind": "activity",
+     "type": "buildSentence",
+     "prompt": "Build the sentence!",
+     "image": "s-pip-swim.svg",
+     "alt": "Pip swimming in a river",
+     "tiles": [
+      "right now",
+      "swimming",
+      "is",
+      "Pip"
+     ],
+     "accept": [
+      "Pip is swimming right now."
+     ],
+     "verb": "swim",
+     "person": "sg",
+     "hints": [
+      "Start with Pip.",
+      "Pip is one. Use is, then swimming.",
+      "Pip is swimming right now."
+     ],
+     "est": 43
+    },
+    {
+     "kind": "activity",
+     "type": "multipleChoice",
+     "prompt": "sit + ing = ?",
+     "tag": "spelling",
+     "verb": "sit",
+     "options": [
+      {
+       "id": "siting",
+       "label": "siting"
+      },
+      {
+       "id": "sittin",
+       "label": "sittin"
+      },
+      {
+       "id": "sitting",
+       "label": "sitting"
+      }
+     ],
+     "answer": "sitting",
+     "hints": [
+      "Short word, one vowel and one consonant? Double the last letter!",
+      "sit → sitt + ing.",
+      "The answer: sitting."
+     ],
+     "est": 25
+    },
+    {
+     "kind": "activity",
+     "type": "multipleChoice",
+     "prompt": "Which sentence matches the picture?",
+     "image": "b-fox-run.svg",
+     "alt": "A fox running fast",
+     "tag": "pictureMatch",
+     "options": [
+      {
+       "id": "the-fox-is-running-now-",
+       "label": "The fox is running now."
+      },
+      {
+       "id": "the-fox-are-running-now-",
+       "label": "The fox are running now."
+      },
+      {
+       "id": "the-fox-is-runing-now-",
+       "label": "The fox is runing now."
+      }
+     ],
+     "answer": "the-fox-is-running-now-",
+     "hints": [
+      "Count the foxes. One fox? Use is.",
+      "Run + ing = running. Double the n!",
+      "The fox is running now."
+     ],
+     "est": 30
+    },
+    {
+     "kind": "activity",
+     "type": "multipleChoice",
+     "prompt": "Pick the right word: I ___ looking at the map.",
+     "tag": "agreement",
+     "person": "I",
+     "sentence": "I ___ looking at the map.",
+     "options": [
+      {
+       "id": "is",
+       "label": "is"
+      },
+      {
+       "id": "are",
+       "label": "are"
+      },
+      {
+       "id": "am",
+       "label": "am"
+      }
+     ],
+     "answer": "am",
+     "hints": [
+      "Count the animals or people first.",
+      "I always goes with am.",
+      "The answer: am."
+     ],
+     "est": 25
+    },
+    {
+     "kind": "activity",
+     "type": "multipleChoice",
+     "prompt": "fly + ing = ?",
+     "tag": "spelling",
+     "verb": "fly",
+     "options": [
+      {
+       "id": "flying",
+       "label": "flying"
+      },
+      {
+       "id": "flyin",
+       "label": "flyin"
+      },
+      {
+       "id": "flyying",
+       "label": "flyying"
+      }
+     ],
+     "answer": "flying",
+     "hints": [
+      "Just add ing. Nothing changes!",
+      "fly → fly + ing.",
+      "The answer: flying."
+     ],
+     "est": 25
+    },
+    {
+     "kind": "activity",
+     "type": "multipleChoice",
+     "prompt": "jump + ing = ?",
+     "tag": "spelling",
+     "verb": "jump",
+     "options": [
+      {
+       "id": "jumpping",
+       "label": "jumpping"
+      },
+      {
+       "id": "jumping",
+       "label": "jumping"
+      },
+      {
+       "id": "jumpin",
+       "label": "jumpin"
+      }
+     ],
+     "answer": "jumping",
+     "hints": [
+      "Just add ing. Nothing changes!",
+      "jump → jump + ing.",
+      "The answer: jumping."
+     ],
+     "est": 25
+    },
+    {
+     "kind": "activity",
+     "type": "dragFill",
+     "prompt": "Practice: Drag am, is or are into the blanks!",
+     "images": [
+      "s-birds-sing.svg"
+     ],
+     "alts": [
+      "Birds singing on a branch"
+     ],
+     "template": "The birds {0} singing.\nA bird {1} sitting on the tree.",
+     "people": [
+      "pl",
+      "sg"
+     ],
+     "answers": [
+      "are",
+      "is"
+     ],
+     "chips": [
+      "is",
+      "are",
+      "am"
+     ],
+     "hints": [
+      "Many birds? Use are.",
+      "A bird is one. Use is.",
+      "The birds are singing. A bird is sitting."
+     ],
+     "tag": "practice",
+     "est": 44
+    },
+    {
+     "kind": "activity",
+     "type": "multipleChoice",
+     "prompt": "Pick the right word: The bird ___ flying right now.",
+     "tag": "agreement",
+     "person": "sg",
+     "sentence": "The bird ___ flying right now.",
+     "options": [
+      {
+       "id": "is",
+       "label": "is"
+      },
+      {
+       "id": "are",
+       "label": "are"
+      },
+      {
+       "id": "am",
+       "label": "am"
+      }
+     ],
+     "answer": "is",
+     "hints": [
+      "Count the animals or people first.",
+      "One bird? Use is.",
+      "The answer: is."
+     ],
+     "est": 25
+    },
+    {
+     "kind": "activity",
+     "type": "buildSentence",
+     "prompt": "Build the sentence!",
+     "image": "s-eat-lunch.svg",
+     "alt": "Friends eating lunch",
+     "tiles": [
+      "right now",
+      "lunch",
+      "eating",
+      "are",
+      "friends",
+      "The"
+     ],
+     "accept": [
+      "The friends are eating lunch right now."
+     ],
+     "verb": "eat",
+     "person": "pl",
+     "hints": [
+      "Start with The friends.",
+      "Many friends? Use are.",
+      "The friends are eating lunch right now."
+     ],
+     "est": 57
+    },
+    {
+     "kind": "activity",
+     "type": "multipleChoice",
+     "prompt": "dance + ing = ?",
+     "tag": "spelling",
+     "verb": "dance",
+     "options": [
+      {
+       "id": "dancing",
+       "label": "dancing"
+      },
+      {
+       "id": "danceing",
+       "label": "danceing"
+      },
+      {
+       "id": "dancin",
+       "label": "dancin"
+      }
+     ],
+     "answer": "dancing",
+     "hints": [
+      "Ends with e? Drop the e!",
+      "dance → danc + ing.",
+      "The answer: dancing."
+     ],
+     "est": 25
+    },
+    {
+     "kind": "activity",
+     "type": "multipleChoice",
+     "prompt": "walk + ing = ?",
+     "tag": "spelling",
+     "verb": "walk",
+     "options": [
+      {
+       "id": "walking",
+       "label": "walking"
+      },
+      {
+       "id": "walkin",
+       "label": "walkin"
+      },
+      {
+       "id": "walkking",
+       "label": "walkking"
+      }
+     ],
+     "answer": "walking",
+     "hints": [
+      "Just add ing. Nothing changes!",
+      "walk → walk + ing.",
+      "The answer: walking."
+     ],
+     "est": 25
+    },
+    {
+     "kind": "activity",
+     "type": "multipleChoice",
+     "prompt": "Pick the right word: Pip and Mia ___ walking now.",
+     "tag": "agreement",
+     "person": "pl",
+     "sentence": "Pip and Mia ___ walking now.",
+     "options": [
+      {
+       "id": "is",
+       "label": "is"
+      },
+      {
+       "id": "are",
+       "label": "are"
+      },
+      {
+       "id": "am",
+       "label": "am"
+      }
+     ],
+     "answer": "are",
+     "hints": [
+      "Count the animals or people first.",
+      "Two people? Use are.",
+      "The answer: are."
+     ],
+     "est": 25
+    },
+    {
+     "kind": "activity",
+     "type": "multipleChoice",
+     "prompt": "Which sentence matches the picture?",
+     "image": "b-birds-sing.svg",
+     "alt": "Birds singing in a tree",
+     "tag": "pictureMatch",
+     "options": [
+      {
+       "id": "the-birds-are-singing-now-",
+       "label": "The birds are singing now."
+      },
+      {
+       "id": "the-birds-is-singing-now-",
+       "label": "The birds is singing now."
+      },
+      {
+       "id": "the-birds-are-singin-now-",
+       "label": "The birds are singin now."
+      }
+     ],
+     "answer": "the-birds-are-singing-now-",
+     "hints": [
+      "Many birds? Use are.",
+      "Sing + ing = singing. Keep the g!",
+      "The birds are singing now."
+     ],
+     "est": 30
+    },
+    {
+     "kind": "activity",
+     "type": "multipleChoice",
+     "prompt": "draw + ing = ?",
+     "tag": "spelling",
+     "verb": "draw",
+     "options": [
+      {
+       "id": "drawwing",
+       "label": "drawwing"
+      },
+      {
+       "id": "drawing",
+       "label": "drawing"
+      },
+      {
+       "id": "drawin",
+       "label": "drawin"
+      }
+     ],
+     "answer": "drawing",
+     "hints": [
+      "Just add ing. Nothing changes!",
+      "draw → draw + ing.",
+      "The answer: drawing."
+     ],
+     "est": 25
+    },
+    {
+     "kind": "activity",
+     "type": "dragFill",
+     "prompt": "Practice: Drag am, is or are into the blanks!",
+     "images": [
+      "s-draw-map.svg"
+     ],
+     "alts": [
+      "A hand drawing a map"
+     ],
+     "template": "I {0} drawing the map.\nPip {1} looking at me.",
+     "people": [
+      "I",
+      "sg"
+     ],
+     "answers": [
+      "am",
+      "is"
+     ],
+     "chips": [
+      "is",
+      "are",
+      "am"
+     ],
+     "hints": [
+      "I always goes with am.",
+      "Pip is one fox. Use is.",
+      "I am drawing. Pip is looking."
+     ],
+     "tag": "practice",
+     "est": 44
+    },
+    {
+     "kind": "activity",
+     "type": "buildSentence",
+     "prompt": "Build the sentence!",
+     "image": "s-draw-map.svg",
+     "alt": "A hand drawing a map",
+     "tiles": [
+      "right now",
+      "map",
+      "the",
+      "drawing",
+      "am",
+      "I"
+     ],
+     "accept": [
+      "I am drawing the map right now."
+     ],
+     "verb": "draw",
+     "person": "I",
+     "hints": [
+      "Start with I.",
+      "I always goes with am.",
+      "I am drawing the map right now."
+     ],
+     "est": 57
+    },
+    {
+     "kind": "activity",
+     "type": "multipleChoice",
+     "prompt": "Pick the right word: The fox ___ running right now.",
+     "tag": "agreement",
+     "person": "sg",
+     "sentence": "The fox ___ running right now.",
+     "options": [
+      {
+       "id": "is",
+       "label": "is"
+      },
+      {
+       "id": "are",
+       "label": "are"
+      },
+      {
+       "id": "am",
+       "label": "am"
+      }
+     ],
+     "answer": "is",
+     "hints": [
+      "Count the animals or people first.",
+      "One fox? Use is.",
+      "The answer: is."
+     ],
+     "est": 25
+    },
+    {
+     "kind": "activity",
+     "type": "multipleChoice",
+     "prompt": "sing + ing = ?",
+     "tag": "spelling",
+     "verb": "sing",
+     "options": [
+      {
+       "id": "singging",
+       "label": "singging"
+      },
+      {
+       "id": "singing",
+       "label": "singing"
+      },
+      {
+       "id": "singin",
+       "label": "singin"
+      }
+     ],
+     "answer": "singing",
+     "hints": [
+      "Just add ing. Nothing changes!",
+      "sing → sing + ing.",
+      "The answer: singing."
+     ],
+     "est": 25
     }
    ]
   },
@@ -368,7 +1209,8 @@
       "Wow! The map shows a plan!",
       "It shows things for TOMORROW! 📅",
       "Same form. New time word!"
-     ]
+     ],
+     "est": 30
     },
     {
      "kind": "teach",
@@ -388,7 +1230,8 @@
      "badge": {
       "en": "LATER",
       "tr": "Sonra"
-     }
+     },
+     "est": 56
     },
     {
      "kind": "teach",
@@ -401,7 +1244,8 @@
       "We are going to visit the waterfall tomorrow.",
       "Our plan is to visit the waterfall tomorrow."
      ],
-     "turkish": "Şimdi yüzüyorum.\nYarın yüzüyorum."
+     "turkish": "Şimdi yüzüyorum.\nYarın yüzüyorum.",
+     "est": 63
     },
     {
      "kind": "activity",
@@ -428,7 +1272,8 @@
       "Sun and clock? That means now.",
       "Calendar means later.",
       "Set A is NOW. Set B is LATER."
-     ]
+     ],
+     "est": 44
     },
     {
      "kind": "activity",
@@ -506,7 +1351,8 @@
       "Look for now or right now.",
       "Look for tomorrow or next week.",
       "now = NOW. tomorrow or next week = LATER."
-     ]
+     ],
+     "est": 127
     },
     {
      "kind": "activity",
@@ -529,7 +1375,8 @@
       "Sun and clock? That means now.",
       "Calendar? That means later.",
       "Pick now."
-     ]
+     ],
+     "est": 30
     },
     {
      "kind": "activity",
@@ -552,7 +1399,8 @@
       "Sun and clock? That means now.",
       "Calendar? That means later.",
       "Pick tomorrow."
-     ]
+     ],
+     "est": 30
     },
     {
      "kind": "activity",
@@ -575,7 +1423,8 @@
       "Sun and clock? That means now.",
       "Calendar? That means later.",
       "Pick tomorrow."
-     ]
+     ],
+     "est": 30
     },
     {
      "kind": "activity",
@@ -600,7 +1449,8 @@
       "Start with We are.",
       "We are going to + a verb.",
       "We are going to climb the hill tomorrow."
-     ]
+     ],
+     "est": 71
     },
     {
      "kind": "activity",
@@ -625,7 +1475,504 @@
       "Start with Our plan.",
       "Our plan is to + a verb.",
       "Our plan is to visit the cave next week."
-     ]
+     ],
+     "est": 71
+    },
+    {
+     "kind": "teach",
+     "image": "calendar-later.svg",
+     "alt": "A calendar for later",
+     "title": "Spot the time word!",
+     "bullets": [
+      "now / right now = NOW (Şimdi).",
+      "tomorrow / next week = LATER (Sonra).",
+      "The form stays the same!",
+      "Pip is jumping right now. Pip is jumping tomorrow."
+     ],
+     "formula": "Subject + am/is/are + Verb-ing",
+     "compare": {
+      "now": "The bats are flying right now.",
+      "later": "The bats are flying next week."
+     },
+     "est": 63
+    },
+    {
+     "kind": "activity",
+     "type": "multipleChoice",
+     "prompt": "NOW or LATER? \"Pip is jumping tomorrow.\"",
+     "tag": "timeWord",
+     "sentence": "Pip is jumping tomorrow.",
+     "options": [
+      {
+       "id": "NOW",
+       "label": "NOW"
+      },
+      {
+       "id": "LATER",
+       "label": "LATER"
+      }
+     ],
+     "answer": "LATER",
+     "hints": [
+      "Find the time word in the sentence.",
+      "now or right now? Pick NOW. tomorrow or next week? Pick LATER.",
+      "Pick LATER."
+     ],
+     "est": 25
+    },
+    {
+     "kind": "activity",
+     "type": "multipleChoice",
+     "prompt": "climb + ing = ?",
+     "tag": "spelling",
+     "verb": "climb",
+     "options": [
+      {
+       "id": "climbbing",
+       "label": "climbbing"
+      },
+      {
+       "id": "climbing",
+       "label": "climbing"
+      },
+      {
+       "id": "climbin",
+       "label": "climbin"
+      }
+     ],
+     "answer": "climbing",
+     "hints": [
+      "Just add ing. Nothing changes!",
+      "climb → climb + ing.",
+      "The answer: climbing."
+     ],
+     "est": 25
+    },
+    {
+     "kind": "activity",
+     "type": "multipleChoice",
+     "prompt": "Which sentence matches the picture?",
+     "image": "b-hill-plan.svg",
+     "alt": "A big hill with a calendar",
+     "tag": "pictureMatch",
+     "options": [
+      {
+       "id": "we-are-climbing-the-hill-tomorrow-",
+       "label": "We are climbing the hill tomorrow."
+      },
+      {
+       "id": "we-is-climbing-the-hill-tomorrow-",
+       "label": "We is climbing the hill tomorrow."
+      },
+      {
+       "id": "we-are-climbing-the-hill-now-",
+       "label": "We are climbing the hill now."
+      }
+     ],
+     "answer": "we-are-climbing-the-hill-tomorrow-",
+     "hints": [
+      "Look at the calendar. Now or later?",
+      "We goes with are.",
+      "We are climbing the hill tomorrow."
+     ],
+     "est": 30
+    },
+    {
+     "kind": "activity",
+     "type": "buildSentence",
+     "prompt": "Build the plan sentence!",
+     "image": "s-kite.svg",
+     "alt": "A kite with a calendar",
+     "tiles": [
+      "tomorrow",
+      "kite",
+      "the",
+      "flying",
+      "is",
+      "Pip"
+     ],
+     "accept": [
+      "Pip is flying the kite tomorrow."
+     ],
+     "verb": "fly",
+     "person": "sg",
+     "hints": [
+      "Start with Pip.",
+      "Pip is one. Use is, then flying.",
+      "Pip is flying the kite tomorrow."
+     ],
+     "est": 57
+    },
+    {
+     "kind": "activity",
+     "type": "multipleChoice",
+     "prompt": "NOW or LATER? \"The bats are flying right now.\"",
+     "tag": "timeWord",
+     "sentence": "The bats are flying right now.",
+     "options": [
+      {
+       "id": "NOW",
+       "label": "NOW"
+      },
+      {
+       "id": "LATER",
+       "label": "LATER"
+      }
+     ],
+     "answer": "NOW",
+     "hints": [
+      "Find the time word in the sentence.",
+      "now or right now? Pick NOW. tomorrow or next week? Pick LATER.",
+      "Pick NOW."
+     ],
+     "est": 25
+    },
+    {
+     "kind": "activity",
+     "type": "multipleChoice",
+     "prompt": "build + ing = ?",
+     "tag": "spelling",
+     "verb": "build",
+     "options": [
+      {
+       "id": "buildin",
+       "label": "buildin"
+      },
+      {
+       "id": "buildding",
+       "label": "buildding"
+      },
+      {
+       "id": "building",
+       "label": "building"
+      }
+     ],
+     "answer": "building",
+     "hints": [
+      "Just add ing. Nothing changes!",
+      "build → build + ing.",
+      "The answer: building."
+     ],
+     "est": 25
+    },
+    {
+     "kind": "activity",
+     "type": "sort",
+     "prompt": "Practice sort: NOW or LATER?",
+     "bins": [
+      {
+       "id": "NOW",
+       "tr": "Şimdi"
+      },
+      {
+       "id": "LATER",
+       "tr": "Sonra"
+      }
+     ],
+     "cards": [
+      {
+       "id": "p1-a",
+       "text": "The monkeys are eating right now.",
+       "image": "m-sun.svg",
+       "alt": "A sun and a clock",
+       "bin": "NOW"
+      },
+      {
+       "id": "p1-b",
+       "text": "I am writing a note now.",
+       "image": "m-sun.svg",
+       "alt": "A sun and a clock",
+       "bin": "NOW"
+      },
+      {
+       "id": "p1-c",
+       "text": "Mia is climbing the tree right now.",
+       "image": "m-sun.svg",
+       "alt": "A sun and a clock",
+       "bin": "NOW"
+      },
+      {
+       "id": "p1-d",
+       "text": "We are sailing the boat tomorrow.",
+       "image": "m-cal1.svg",
+       "alt": "A calendar page",
+       "bin": "LATER"
+      },
+      {
+       "id": "p1-e",
+       "text": "Pip and Mia are painting the map next week.",
+       "image": "m-cal1.svg",
+       "alt": "A calendar page",
+       "bin": "LATER"
+      },
+      {
+       "id": "p1-f",
+       "text": "My friend is visiting tomorrow.",
+       "image": "m-cal1.svg",
+       "alt": "A calendar page",
+       "bin": "LATER"
+      }
+     ],
+     "hints": [
+      "Look for now or right now.",
+      "Look for tomorrow or next week.",
+      "now = NOW. tomorrow or next week = LATER."
+     ],
+     "tag": "practice",
+     "est": 99
+    },
+    {
+     "kind": "activity",
+     "type": "multipleChoice",
+     "prompt": "NOW or LATER? \"We are visiting the hill next week.\"",
+     "tag": "timeWord",
+     "sentence": "We are visiting the hill next week.",
+     "options": [
+      {
+       "id": "NOW",
+       "label": "NOW"
+      },
+      {
+       "id": "LATER",
+       "label": "LATER"
+      }
+     ],
+     "answer": "LATER",
+     "hints": [
+      "Find the time word in the sentence.",
+      "now or right now? Pick NOW. tomorrow or next week? Pick LATER.",
+      "Pick LATER."
+     ],
+     "est": 25
+    },
+    {
+     "kind": "activity",
+     "type": "multipleChoice",
+     "prompt": "visit + ing = ?",
+     "tag": "spelling",
+     "verb": "visit",
+     "options": [
+      {
+       "id": "visiting",
+       "label": "visiting"
+      },
+      {
+       "id": "visitin",
+       "label": "visitin"
+      },
+      {
+       "id": "visitting",
+       "label": "visitting"
+      }
+     ],
+     "answer": "visiting",
+     "hints": [
+      "Just add ing. Nothing changes!",
+      "visit → visit + ing.",
+      "The answer: visiting."
+     ],
+     "est": 25
+    },
+    {
+     "kind": "activity",
+     "type": "multipleChoice",
+     "prompt": "Which sentence matches the picture?",
+     "image": "b-cave-plan.svg",
+     "alt": "A dark cave with a calendar",
+     "tag": "pictureMatch",
+     "options": [
+      {
+       "id": "pip-is-visiting-the-cave-next-week-",
+       "label": "Pip is visiting the cave next week."
+      },
+      {
+       "id": "pip-are-visiting-the-cave-next-week-",
+       "label": "Pip are visiting the cave next week."
+      },
+      {
+       "id": "pip-is-visiting-the-cave-now-",
+       "label": "Pip is visiting the cave now."
+      }
+     ],
+     "answer": "pip-is-visiting-the-cave-next-week-",
+     "hints": [
+      "Look at the calendar. Now or later?",
+      "Pip is one. Use is.",
+      "Pip is visiting the cave next week."
+     ],
+     "est": 30
+    },
+    {
+     "kind": "activity",
+     "type": "buildSentence",
+     "prompt": "Build the plan sentence!",
+     "image": "s-boat.svg",
+     "alt": "A boat with a calendar",
+     "tiles": [
+      "next week",
+      "boat",
+      "the",
+      "sailing",
+      "are",
+      "We"
+     ],
+     "accept": [
+      "We are sailing the boat next week."
+     ],
+     "verb": "sail",
+     "person": "pl",
+     "hints": [
+      "Start with We.",
+      "We goes with are, then sailing.",
+      "We are sailing the boat next week."
+     ],
+     "est": 57
+    },
+    {
+     "kind": "activity",
+     "type": "multipleChoice",
+     "prompt": "NOW or LATER? \"I am drawing a star now.\"",
+     "tag": "timeWord",
+     "sentence": "I am drawing a star now.",
+     "options": [
+      {
+       "id": "NOW",
+       "label": "NOW"
+      },
+      {
+       "id": "LATER",
+       "label": "LATER"
+      }
+     ],
+     "answer": "NOW",
+     "hints": [
+      "Find the time word in the sentence.",
+      "now or right now? Pick NOW. tomorrow or next week? Pick LATER.",
+      "Pick NOW."
+     ],
+     "est": 25
+    },
+    {
+     "kind": "activity",
+     "type": "multipleChoice",
+     "prompt": "play + ing = ?",
+     "tag": "spelling",
+     "verb": "play",
+     "options": [
+      {
+       "id": "playying",
+       "label": "playying"
+      },
+      {
+       "id": "playing",
+       "label": "playing"
+      },
+      {
+       "id": "playin",
+       "label": "playin"
+      }
+     ],
+     "answer": "playing",
+     "hints": [
+      "Just add ing. Nothing changes!",
+      "play → play + ing.",
+      "The answer: playing."
+     ],
+     "est": 25
+    },
+    {
+     "kind": "activity",
+     "type": "sort",
+     "prompt": "Review round: sort all the sentences, NOW or LATER?",
+     "bins": [
+      {
+       "id": "NOW",
+       "tr": "Şimdi"
+      },
+      {
+       "id": "LATER",
+       "tr": "Sonra"
+      }
+     ],
+     "cards": [
+      {
+       "id": "r-a",
+       "text": "The bird is flying right now.",
+       "image": "m-sun.svg",
+       "alt": "A sun and a clock",
+       "bin": "NOW"
+      },
+      {
+       "id": "r-b",
+       "text": "We are dancing now.",
+       "image": "m-sun.svg",
+       "alt": "A sun and a clock",
+       "bin": "NOW"
+      },
+      {
+       "id": "r-c",
+       "text": "I am looking at the river now.",
+       "image": "m-sun.svg",
+       "alt": "A sun and a clock",
+       "bin": "NOW"
+      },
+      {
+       "id": "r-d",
+       "text": "The fox is running right now.",
+       "image": "m-sun.svg",
+       "alt": "A sun and a clock",
+       "bin": "NOW"
+      },
+      {
+       "id": "r-e",
+       "text": "Mia and Pip are walking now.",
+       "image": "m-sun.svg",
+       "alt": "A sun and a clock",
+       "bin": "NOW"
+      },
+      {
+       "id": "r-f",
+       "text": "The monkeys are swimming tomorrow.",
+       "image": "m-cal1.svg",
+       "alt": "A calendar page",
+       "bin": "LATER"
+      },
+      {
+       "id": "r-g",
+       "text": "I am drawing a new map next week.",
+       "image": "m-cal1.svg",
+       "alt": "A calendar page",
+       "bin": "LATER"
+      },
+      {
+       "id": "r-h",
+       "text": "Pip is sitting on the hill tomorrow.",
+       "image": "m-cal1.svg",
+       "alt": "A calendar page",
+       "bin": "LATER"
+      },
+      {
+       "id": "r-i",
+       "text": "We are playing in the cave next week.",
+       "image": "m-cal1.svg",
+       "alt": "A calendar page",
+       "bin": "LATER"
+      },
+      {
+       "id": "r-j",
+       "text": "The birds are singing tomorrow.",
+       "image": "m-cal1.svg",
+       "alt": "A calendar page",
+       "bin": "LATER"
+      }
+     ],
+     "hints": [
+      "Look for now or right now.",
+      "Look for tomorrow or next week.",
+      "now = NOW. tomorrow or next week = LATER."
+     ],
+     "tag": "practice",
+     "est": 155
     }
    ]
   },
@@ -643,7 +1990,8 @@
       "Three magic gates! 🚪",
       "First pick the time way. Then build the sentence!",
       "You can do it!"
-     ]
+     ],
+     "est": 30
     },
     {
      "kind": "activity",
@@ -688,7 +2036,212 @@
        "verb": "make",
        "ending": "a magic boat."
       }
-     ]
+     ],
+     "est": 165
+    },
+    {
+     "kind": "activity",
+     "type": "pathQuiz",
+     "title": "Bonus Gate 1",
+     "hints": [
+      "Read the clue. Look for the time word.",
+      "Pick the right am / is / are.",
+      "Check the -ing spelling."
+     ],
+     "scenarios": [
+      {
+       "id": "bg1-river",
+       "image": "gate-river.svg",
+       "alt": "The river gate",
+       "clue": "Right now, the frogs ... on the rocks!",
+       "path": "NOW",
+       "subject": "The frogs",
+       "person": "pl",
+       "verb": "jump",
+       "ending": "on the rocks."
+      },
+      {
+       "id": "bg1-hill",
+       "image": "gate-hill.svg",
+       "alt": "The hill gate",
+       "clue": "Next week, we ... to the hill!",
+       "path": "LATER",
+       "subject": "We",
+       "person": "pl",
+       "verb": "walk",
+       "ending": "to the hill."
+      },
+      {
+       "id": "bg1-cave",
+       "image": "gate-cave.svg",
+       "alt": "The cave gate",
+       "clue": "Right now, I ... a map of the cave!",
+       "path": "NOW",
+       "subject": "I",
+       "person": "I",
+       "verb": "draw",
+       "ending": "a map of the cave."
+      }
+     ],
+     "tag": "bonus",
+     "est": 165
+    },
+    {
+     "kind": "activity",
+     "type": "buildSentence",
+     "prompt": "Build the NOW sentence!",
+     "image": "b-fox-run.svg",
+     "alt": "A fox running fast",
+     "tiles": [
+      "right now",
+      "running",
+      "is",
+      "fox",
+      "The"
+     ],
+     "accept": [
+      "The fox is running right now."
+     ],
+     "verb": "run",
+     "person": "sg",
+     "hints": [
+      "Start with The fox.",
+      "One fox? Use is, then running.",
+      "The fox is running right now."
+     ],
+     "est": 50
+    },
+    {
+     "kind": "activity",
+     "type": "pathQuiz",
+     "title": "Bonus Gate 2",
+     "hints": [
+      "Read the clue. Look for the time word.",
+      "Pick the right am / is / are.",
+      "Check the -ing spelling."
+     ],
+     "scenarios": [
+      {
+       "id": "bg2-river",
+       "image": "gate-river.svg",
+       "alt": "The river gate",
+       "clue": "Tomorrow, Mia ... by the river!",
+       "path": "LATER",
+       "subject": "Mia",
+       "person": "sg",
+       "verb": "play",
+       "ending": "by the river."
+      },
+      {
+       "id": "bg2-hill",
+       "image": "gate-hill.svg",
+       "alt": "The hill gate",
+       "clue": "At this moment, the birds ... above the hill!",
+       "path": "NOW",
+       "subject": "The birds",
+       "person": "pl",
+       "verb": "fly",
+       "ending": "above the hill."
+      },
+      {
+       "id": "bg2-cave",
+       "image": "gate-cave.svg",
+       "alt": "The cave gate",
+       "clue": "Next week, Pip and Mia ... the cave!",
+       "path": "LATER",
+       "subject": "Pip and Mia",
+       "person": "pl",
+       "verb": "visit",
+       "ending": "the cave."
+      }
+     ],
+     "tag": "bonus",
+     "est": 165
+    },
+    {
+     "kind": "activity",
+     "type": "buildSentence",
+     "prompt": "Build the LATER sentence!",
+     "image": "s-waterfall.svg",
+     "alt": "A waterfall with a calendar",
+     "tiles": [
+      "tomorrow",
+      "waterfall",
+      "the",
+      "visiting",
+      "are",
+      "monkeys",
+      "The"
+     ],
+     "accept": [
+      "The monkeys are visiting the waterfall tomorrow."
+     ],
+     "verb": "visit",
+     "person": "pl",
+     "hints": [
+      "Start with The monkeys.",
+      "Many monkeys? Use are, then visiting.",
+      "The monkeys are visiting the waterfall tomorrow."
+     ],
+     "est": 64
+    },
+    {
+     "kind": "activity",
+     "type": "pathQuiz",
+     "title": "Boss Round",
+     "hints": [
+      "Read the clue. Look for the time word.",
+      "Pick the right am / is / are.",
+      "Check the -ing spelling."
+     ],
+     "scenarios": [
+      {
+       "id": "boss-river",
+       "image": "gate-river.svg",
+       "alt": "The river gate",
+       "clue": "Right now, the fox ... near the water!",
+       "path": "NOW",
+       "subject": "The fox",
+       "person": "sg",
+       "verb": "run",
+       "ending": "near the water."
+      },
+      {
+       "id": "boss-hill",
+       "image": "gate-hill.svg",
+       "alt": "The hill gate",
+       "clue": "Tomorrow, I ... on the hill!",
+       "path": "LATER",
+       "subject": "I",
+       "person": "I",
+       "verb": "sit",
+       "ending": "on the hill."
+      },
+      {
+       "id": "boss-cave",
+       "image": "gate-cave.svg",
+       "alt": "The cave gate",
+       "clue": "Right now, the bats ... in the cave!",
+       "path": "NOW",
+       "subject": "The bats",
+       "person": "pl",
+       "verb": "dance",
+       "ending": "in the cave."
+      },
+      {
+       "id": "boss-sail",
+       "image": "gate-river.svg",
+       "alt": "The river gate",
+       "clue": "Next week, my friends and I ... a big boat!",
+       "path": "LATER",
+       "subject": "My friends and I",
+       "person": "pl",
+       "verb": "build",
+       "ending": "a big boat."
+      }
+     ],
+     "tag": "bonus",
+     "est": 220
     },
     {
      "kind": "story",
@@ -698,7 +2251,8 @@
       "You did it! The map is complete! 🗺️",
       "Tomorrow we are going to...",
       "find the magic treasure! Hooray!"
-     ]
+     ],
+     "est": 30
     }
    ]
   }
