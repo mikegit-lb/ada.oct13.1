@@ -19,9 +19,8 @@ export function mountMultipleChoice(root, slide, ctx) {
           type: 'button', 'data-testid': `option-${o.id}`,
           class: 'option' + (solved === o.id ? ' right' : wrong.has(o.id) ? ' nope' : ''),
           disabled: solved !== null,
-          'aria-label': o.label,
           onclick: () => pick(o.id),
-        }, o.image ? img(o.image, '') : null, el("span", { text: o.label })))),
+        }, o.image ? img(o.image, o.label) : null, el('span', { text: o.label, 'aria-hidden': o.image ? 'true' : null })))),
     ].filter(Boolean));
   }
 
