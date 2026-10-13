@@ -4,7 +4,10 @@ import { mountDragFill } from './dragFill.js';
 import { mountSort } from './sort.js';
 import { mountBuildSentence } from './buildSentence.js';
 
+import { mountPathQuiz } from './pathQuiz.js';
+
 const registry = {
+  pathQuiz: mountPathQuiz,
   sort: mountSort,
   buildSentence: mountBuildSentence,
   multipleChoice: mountMultipleChoice,
