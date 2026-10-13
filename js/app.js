@@ -1,6 +1,6 @@
 import { createState } from './engine/state.js';
 import { renderSlide } from './ui/slides.js';
-import { createPip } from './ui/pip.js';
+import { createPip, speak } from './ui/pip.js';
 import { confetti } from './ui/confetti.js';
 import { el, img } from './ui/dom.js';
 
@@ -16,6 +16,7 @@ const slideKey = () => `${state.stageIndex}:${idx}`;
 const pick = (a) => a[Math.floor(Math.random() * a.length)];
 
 function renderHud() {
+  renderMute();
   $('[data-testid=stars]').textContent = `⭐ ${state.stars}`;
   $('[data-testid=hearts]').textContent = '❤'.repeat(state.hearts) + '♡'.repeat(3 - state.hearts);
   $('[data-testid=hearts]').setAttribute('aria-label', `${state.hearts} hearts`);
@@ -23,6 +24,16 @@ function renderHud() {
     { class: 'piece' + (state.completed.includes(n - 1) ? ' collected' : ''), 'data-testid': `map-piece-${n}` },
     img(`map-piece-${n}.svg`, `Map piece ${n}`))));
 }
+
+function renderMute() {
+  const b = $('[data-testid=mute]');
+  b.setAttribute('aria-pressed', String(state.muted));
+  b.textContent = state.muted ? 'Sound off' : 'Sound on';
+}
+$('[data-testid=mute]').addEventListener('click', () => {
+  state.setMuted(!state.muted); renderMute();
+  if (state.muted) speak('');
+});
 
 function setNext(on, label) {
   nextOn = on;
@@ -33,6 +44,7 @@ function setNext(on, label) {
 
 const ctx = {
   state, pip,
+  speakLines(lines) { if (!state.muted) speak(lines.join(' ')); },
   onAttempt(correct) {
     if (correct) { state.addStars(1); confetti(document.body); pip.say(pick(content.feedback.cheer), 'cheer'); }
     else pip.say(pick(content.feedback.retry), 'hint');
