@@ -97,6 +97,15 @@ $('[data-testid=back]').addEventListener('click', () => {
 try {
   content = await fetch('data/content.json').then((r) => r.json());
   if (state.completed.length === 4) screen = 'finale';
+  // Deep link for demos and tests: ?stage=1&slide=3 (zero-based) jumps straight to a slide.
+  const q = new URLSearchParams(location.search);
+  if (q.has('stage')) {
+    const s = Number(q.get('stage')), i = Number(q.get('slide') || 0);
+    if (content.stages[s]) {
+      state.stageIndex = s; screen = 'lesson';
+      idx = content.stages[s].slides[i] ? i : 0;
+    }
+  }
   show();
 } catch {
   root.replaceChildren(el('p', { class: 'card', text: 'Oh no! Pip could not load the map. Please open this page from a web server.' }));

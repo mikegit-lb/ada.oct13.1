@@ -1,4 +1,5 @@
 import { el, img } from './dom.js';
+import { mountActivity } from '../activities/index.js';
 
 const lines = (text) => text.split('\n').map((t) => el('p', { text: t }));
 
@@ -6,9 +7,7 @@ export function renderSlide(root, slide, ctx) {
   root.replaceChildren();
   if (slide.kind === 'story') return renderStory(root, slide, ctx);
   if (slide.kind === 'teach') return renderTeach(root, slide);
-  // Activities are mounted by the activity modules (Task 5+).
-  root.append(el('section', { class: 'card' }, el('p', { text: 'Activity coming soon!' })));
-  ctx.onComplete();
+  return mountActivity(root, slide, ctx);
 }
 
 function renderStory(root, slide, ctx) {
