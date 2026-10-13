@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Secret Map of the Magic Forest</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="top">
+  <h1 class="game-title">The Secret Map of the Magic Forest</h1>
+  <div class="hud">
+    <div class="map-pieces" role="group" aria-label="Map pieces"></div>
+    <span class="pill" data-testid="stars" role="status" aria-label="Stars"></span>
+    <span class="pill" data-testid="hearts" role="status" aria-label="Hearts"></span>
+    <button class="pill btn-mute" data-testid="mute" type="button" aria-pressed="false">Sound on</button>
+  </div>
+  <p class="progress" data-testid="progress" aria-live="polite"></p>
+</header>
+<main id="stage" tabindex="-1"><p class="loading">Loading the map...</p></main>
+<footer class="bottom">
+  <div class="pip-wrap">
+    <img class="pip-face" src="assets/fox.svg" alt="Pip the fox">
+    <p class="pip-bubble" data-testid="pip-bubble" aria-live="polite">Hi! I am Pip!</p>
+  </div>
+  <div class="nav">
+    <button class="btn" data-testid="back" type="button">Back</button>
+    <button class="btn btn-main" data-testid="next" type="button">Next</button>
+  </div>
+</footer>
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
