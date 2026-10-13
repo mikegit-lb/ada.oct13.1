@@ -1,0 +1,706 @@
+{
+ "title": "The Secret Map of the Magic Forest",
+ "mascot": {
+  "name": "Pip"
+ },
+ "feedback": {
+  "cheer": [
+   "Super!",
+   "Great job!",
+   "Hooray!",
+   "You are a star!"
+  ],
+  "retry": [
+   "Almost! Try again",
+   "So close! Try again",
+   "Nice try! One more time"
+  ]
+ },
+ "stages": [
+  {
+   "id": "hook",
+   "title": "STAGE 1: THE HOOK & WARM-UP",
+   "mapPiece": 1,
+   "goal": "Meet Pip, find the torn map and warm up with forest words.",
+   "slides": [
+    {
+     "kind": "story",
+     "image": "map-torn.svg",
+     "alt": "A torn treasure map hanging in a tree",
+     "lines": [
+      "Hi! I'm Pip the fox! 🦊",
+      "Look! A torn map in the tree!",
+      "Help me find the pieces! Tap to play!"
+     ]
+    },
+    {
+     "kind": "activity",
+     "type": "multipleChoice",
+     "prompt": "Tap the FOX!",
+     "options": [
+      {
+       "id": "fox",
+       "label": "fox",
+       "image": "fox.svg"
+      },
+      {
+       "id": "frog",
+       "label": "frog",
+       "image": "frog.svg"
+      },
+      {
+       "id": "bird",
+       "label": "bird",
+       "image": "bird.svg"
+      }
+     ],
+     "answer": "fox",
+     "hints": [
+      "Look for orange fur!",
+      "The fox has a big tail.",
+      "Tap the orange animal."
+     ]
+    },
+    {
+     "kind": "activity",
+     "type": "multipleChoice",
+     "prompt": "Tap the TREE with the secret map!",
+     "options": [
+      {
+       "id": "tree",
+       "label": "tree",
+       "image": "tree.svg"
+      },
+      {
+       "id": "river",
+       "label": "river",
+       "image": "river.svg"
+      },
+      {
+       "id": "hill",
+       "label": "hill",
+       "image": "hill.svg"
+      }
+     ],
+     "answer": "tree",
+     "hints": [
+      "Look for green leaves!",
+      "The map hangs on a tree.",
+      "Tap the tall green thing."
+     ]
+    },
+    {
+     "kind": "activity",
+     "type": "multipleChoice",
+     "prompt": "Tap the WATERFALL!",
+     "options": [
+      {
+       "id": "waterfall",
+       "label": "waterfall",
+       "image": "waterfall.svg"
+      },
+      {
+       "id": "cave",
+       "label": "cave",
+       "image": "cave.svg"
+      },
+      {
+       "id": "boat",
+       "label": "boat",
+       "image": "boat.svg"
+      }
+     ],
+     "answer": "waterfall",
+     "hints": [
+      "Look for falling water!",
+      "Water comes down from high.",
+      "Tap the blue falling water."
+     ]
+    },
+    {
+     "kind": "activity",
+     "type": "multipleChoice",
+     "prompt": "Tap the BOAT!",
+     "options": [
+      {
+       "id": "boat",
+       "label": "boat",
+       "image": "boat.svg"
+      },
+      {
+       "id": "kite",
+       "label": "kite",
+       "image": "kite.svg"
+      },
+      {
+       "id": "map",
+       "label": "map",
+       "image": "map.svg"
+      }
+     ],
+     "answer": "boat",
+     "hints": [
+      "A boat goes on water!",
+      "Look for the little sail.",
+      "Tap the brown boat."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "now",
+   "title": "STAGE 2: ACTION NOW (The Observation Screen)",
+   "mapPiece": 2,
+   "goal": "Use am / is / are + Verb-ing to say what is happening NOW.",
+   "slides": [
+    {
+     "kind": "teach",
+     "image": "scene-timeline.svg",
+     "alt": "Pip looks at animals moving in the forest",
+     "title": "Look! It is happening NOW!",
+     "bullets": [
+      "We use am / is / are + Verb-ing.",
+      "The bird is flying now.",
+      "The frogs are swimming right now.",
+      "I am looking at the map."
+     ],
+     "formula": "Subject + am/is/are + Verb-ing",
+     "badge": {
+      "en": "NOW",
+      "tr": "Şimdi"
+     }
+    },
+    {
+     "kind": "activity",
+     "type": "dragFill",
+     "prompt": "Drag is or are into the blanks!",
+     "images": [
+      "scene-bird-frog.svg"
+     ],
+     "alts": [
+      "A bird flying and frogs swimming in the river"
+     ],
+     "template": "The bird {0} flying.\nThe frogs {1} swimming.",
+     "people": [
+      "sg",
+      "pl"
+     ],
+     "answers": [
+      "is",
+      "are"
+     ],
+     "chips": [
+      "is",
+      "are"
+     ],
+     "hints": [
+      "One bird? Then use is.",
+      "Many frogs? Then use are.",
+      "The bird is flying. The frogs are swimming."
+     ]
+    },
+    {
+     "kind": "activity",
+     "type": "dragFill",
+     "prompt": "Drag is or are into the blanks!",
+     "images": [
+      "scene-monkeys-fox.svg"
+     ],
+     "alts": [
+      "Monkeys eating and a fox running"
+     ],
+     "template": "The monkeys {0} eating.\nThe fox {1} running.",
+     "people": [
+      "pl",
+      "sg"
+     ],
+     "answers": [
+      "are",
+      "is"
+     ],
+     "chips": [
+      "is",
+      "are"
+     ],
+     "hints": [
+      "Many monkeys? Use are.",
+      "One fox? Use is.",
+      "The monkeys are eating. The fox is running."
+     ]
+    },
+    {
+     "kind": "activity",
+     "type": "dragFill",
+     "prompt": "Drag am, is or are into the blanks!",
+     "images": [
+      "scene-mia-pip.svg"
+     ],
+     "alts": [
+      "Mia and Pip walking and looking at the map"
+     ],
+     "template": "I {0} looking at the map.\nPip and I {1} walking.",
+     "people": [
+      "I",
+      "pl"
+     ],
+     "answers": [
+      "am",
+      "are"
+     ],
+     "chips": [
+      "is",
+      "are",
+      "am"
+     ],
+     "hints": [
+      "I always goes with am.",
+      "Pip and I means two people. Use are.",
+      "I am looking. Pip and I are walking."
+     ]
+    },
+    {
+     "kind": "activity",
+     "type": "buildSentence",
+     "prompt": "Build the sentence!",
+     "image": "b-fox-run.svg",
+     "alt": "A fox running fast",
+     "tiles": [
+      "running",
+      "The",
+      "now",
+      "fox",
+      "is"
+     ],
+     "accept": [
+      "The fox is running now."
+     ],
+     "hints": [
+      "Start with The.",
+      "Then fox, is, running.",
+      "The fox is running now."
+     ]
+    },
+    {
+     "kind": "activity",
+     "type": "buildSentence",
+     "prompt": "Build the sentence!",
+     "image": "b-birds-sing.svg",
+     "alt": "Birds singing in a tree",
+     "tiles": [
+      "singing",
+      "now",
+      "birds",
+      "The",
+      "are"
+     ],
+     "accept": [
+      "The birds are singing now."
+     ],
+     "hints": [
+      "Start with The.",
+      "Many birds? Use are.",
+      "The birds are singing now."
+     ]
+    },
+    {
+     "kind": "activity",
+     "type": "multipleChoice",
+     "prompt": "swim + ing = ?",
+     "options": [
+      {
+       "id": "swimming",
+       "label": "swimming"
+      },
+      {
+       "id": "swiming",
+       "label": "swiming"
+      },
+      {
+       "id": "swimin",
+       "label": "swimin"
+      }
+     ],
+     "answer": "swimming",
+     "hints": [
+      "Swim ends with m. Double the m!",
+      "swim → swimm + ing.",
+      "The answer: swimming."
+     ]
+    },
+    {
+     "kind": "activity",
+     "type": "multipleChoice",
+     "prompt": "make + ing = ?",
+     "options": [
+      {
+       "id": "making",
+       "label": "making"
+      },
+      {
+       "id": "makeing",
+       "label": "makeing"
+      },
+      {
+       "id": "makking",
+       "label": "makking"
+      }
+     ],
+     "answer": "making",
+     "hints": [
+      "Make ends with e. Drop the e!",
+      "make → mak + ing.",
+      "The answer: making."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "later",
+   "title": "STAGE 3: ACTION LATER (The Timeline Screen)",
+   "mapPiece": 3,
+   "goal": "Use the SAME form for plans LATER. Only the time word changes.",
+   "slides": [
+    {
+     "kind": "story",
+     "image": "scene-timeline-later.svg",
+     "alt": "The map shows a plan for tomorrow",
+     "lines": [
+      "Wow! The map shows a plan!",
+      "It shows things for TOMORROW! 📅",
+      "Same form. New time word!"
+     ]
+    },
+    {
+     "kind": "teach",
+     "title": "Same form, different time word!",
+     "image": "sun-now.svg",
+     "alt": "A sun and a clock for now",
+     "bullets": [
+      "Form: Subject + am/is/are + Verb-ing.",
+      "Only the time word changes.",
+      "now = Şimdi. tomorrow = Sonra."
+     ],
+     "formula": "Subject + am/is/are + Verb-ing",
+     "compare": {
+      "now": "We are climbing the hill now.",
+      "later": "We are climbing the hill tomorrow."
+     },
+     "badge": {
+      "en": "LATER",
+      "tr": "Sonra"
+     }
+    },
+    {
+     "kind": "teach",
+     "title": "Time words for LATER",
+     "image": "calendar-later.svg",
+     "alt": "A calendar for later",
+     "bullets": [
+      "Tomorrow",
+      "Next week",
+      "We are going to visit the waterfall tomorrow.",
+      "Our plan is to visit the waterfall tomorrow."
+     ],
+     "turkish": "Şimdi yüzüyorum.\nYarın yüzüyorum."
+    },
+    {
+     "kind": "activity",
+     "type": "dragFill",
+     "prompt": "Which set is NOW? Which set is LATER? Drag the labels!",
+     "images": [
+      "set-a.svg",
+      "set-b.svg"
+     ],
+     "alts": [
+      "Set A: three scenes with a sun and a clock",
+      "Set B: three scenes with a calendar"
+     ],
+     "template": "Set A {0}\nSet B {1}",
+     "answers": [
+      "NOW",
+      "LATER"
+     ],
+     "chips": [
+      "NOW",
+      "LATER"
+     ],
+     "hints": [
+      "Sun and clock? That means now.",
+      "Calendar means later.",
+      "Set A is NOW. Set B is LATER."
+     ]
+    },
+    {
+     "kind": "activity",
+     "type": "sort",
+     "prompt": "Sort the sentences: NOW or LATER?",
+     "bins": [
+      {
+       "id": "NOW",
+       "tr": "Şimdi"
+      },
+      {
+       "id": "LATER",
+       "tr": "Sonra"
+      }
+     ],
+     "cards": [
+      {
+       "id": "pip-swim",
+       "text": "Pip is swimming now.",
+       "image": "s-pip-swim.svg",
+       "alt": "Pip swimming in a river",
+       "bin": "NOW"
+      },
+      {
+       "id": "birds-sing",
+       "text": "The birds are singing right now.",
+       "image": "s-birds-sing.svg",
+       "alt": "Birds singing on a branch",
+       "bin": "NOW"
+      },
+      {
+       "id": "eat-lunch",
+       "text": "We are eating lunch now.",
+       "image": "s-eat-lunch.svg",
+       "alt": "Friends eating lunch",
+       "bin": "NOW"
+      },
+      {
+       "id": "draw-map",
+       "text": "I am drawing the map now.",
+       "image": "s-draw-map.svg",
+       "alt": "A hand drawing a map",
+       "bin": "NOW"
+      },
+      {
+       "id": "waterfall",
+       "text": "We are visiting the waterfall tomorrow.",
+       "image": "s-waterfall.svg",
+       "alt": "A waterfall with a calendar",
+       "bin": "LATER"
+      },
+      {
+       "id": "owl",
+       "text": "Pip is meeting the owl next week.",
+       "image": "s-owl.svg",
+       "alt": "Pip and an owl with a calendar",
+       "bin": "LATER"
+      },
+      {
+       "id": "boat",
+       "text": "They are building a boat tomorrow.",
+       "image": "s-boat.svg",
+       "alt": "A boat with a calendar",
+       "bin": "LATER"
+      },
+      {
+       "id": "kite",
+       "text": "I am flying the kite next week.",
+       "image": "s-kite.svg",
+       "alt": "A kite with a calendar",
+       "bin": "LATER"
+      }
+     ],
+     "hints": [
+      "Look for now or right now.",
+      "Look for tomorrow or next week.",
+      "now = NOW. tomorrow or next week = LATER."
+     ]
+    },
+    {
+     "kind": "activity",
+     "type": "multipleChoice",
+     "prompt": "Look at the picture. Pick the time word!",
+     "image": "m-sun.svg",
+     "alt": "A sun and a clock",
+     "options": [
+      {
+       "id": "now",
+       "label": "now"
+      },
+      {
+       "id": "tomorrow",
+       "label": "tomorrow"
+      }
+     ],
+     "answer": "now",
+     "hints": [
+      "Sun and clock? That means now.",
+      "Calendar? That means later.",
+      "Pick now."
+     ]
+    },
+    {
+     "kind": "activity",
+     "type": "multipleChoice",
+     "prompt": "Look at the picture. Pick the time word!",
+     "image": "m-cal1.svg",
+     "alt": "A calendar page for tomorrow",
+     "options": [
+      {
+       "id": "now",
+       "label": "now"
+      },
+      {
+       "id": "tomorrow",
+       "label": "tomorrow"
+      }
+     ],
+     "answer": "tomorrow",
+     "hints": [
+      "Sun and clock? That means now.",
+      "Calendar? That means later.",
+      "Pick tomorrow."
+     ]
+    },
+    {
+     "kind": "activity",
+     "type": "multipleChoice",
+     "prompt": "Look at the picture. Pick the time word!",
+     "image": "m-cal2.svg",
+     "alt": "A calendar page for next week",
+     "options": [
+      {
+       "id": "now",
+       "label": "now"
+      },
+      {
+       "id": "tomorrow",
+       "label": "tomorrow"
+      }
+     ],
+     "answer": "tomorrow",
+     "hints": [
+      "Sun and clock? That means now.",
+      "Calendar? That means later.",
+      "Pick tomorrow."
+     ]
+    },
+    {
+     "kind": "activity",
+     "type": "buildSentence",
+     "prompt": "Build the plan sentence!",
+     "image": "b-hill-plan.svg",
+     "alt": "A big hill with a calendar",
+     "tiles": [
+      "We",
+      "are",
+      "climb",
+      "going",
+      "hill",
+      "the",
+      "to",
+      "tomorrow"
+     ],
+     "accept": [
+      "We are going to climb the hill tomorrow."
+     ],
+     "hints": [
+      "Start with We are.",
+      "We are going to + a verb.",
+      "We are going to climb the hill tomorrow."
+     ]
+    },
+    {
+     "kind": "activity",
+     "type": "buildSentence",
+     "prompt": "Build the plan sentence!",
+     "image": "b-cave-plan.svg",
+     "alt": "A dark cave with a calendar",
+     "tiles": [
+      "Our",
+      "cave",
+      "is",
+      "next week",
+      "plan",
+      "the",
+      "to",
+      "visit"
+     ],
+     "accept": [
+      "Our plan is to visit the cave next week."
+     ],
+     "hints": [
+      "Start with Our plan.",
+      "Our plan is to + a verb.",
+      "Our plan is to visit the cave next week."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "challenge",
+   "title": "STAGE 4: THE CHALLENGE (Which Way Do You Go?)",
+   "mapPiece": 4,
+   "goal": "Pick NOW or LATER, then build the right sentence at three gates.",
+   "slides": [
+    {
+     "kind": "story",
+     "image": "forest-hook.svg",
+     "alt": "A forest path with three gates",
+     "lines": [
+      "Three magic gates! 🚪",
+      "First pick the time way. Then build the sentence!",
+      "You can do it!"
+     ]
+    },
+    {
+     "kind": "activity",
+     "type": "pathQuiz",
+     "title": "Which Way Do You Go?",
+     "hints": [
+      "Read the clue. Look for the time word.",
+      "Pick the right am / is / are.",
+      "Check the -ing spelling."
+     ],
+     "scenarios": [
+      {
+       "id": "river",
+       "image": "gate-river.svg",
+       "alt": "The river gate with splashing monkeys",
+       "clue": "Listen! Right now, the monkeys ... in the river!",
+       "path": "NOW",
+       "subject": "The monkeys",
+       "person": "pl",
+       "verb": "swim",
+       "ending": "in the river."
+      },
+      {
+       "id": "hill",
+       "image": "gate-hill.svg",
+       "alt": "The hill gate with a big hill",
+       "clue": "Tomorrow, Pip and I ... the Big Hill!",
+       "path": "LATER",
+       "subject": "Pip and I",
+       "person": "pl",
+       "verb": "climb",
+       "ending": "the Big Hill."
+      },
+      {
+       "id": "cave",
+       "image": "gate-cave.svg",
+       "alt": "The cave gate with a boat",
+       "clue": "Next week, Pip ... a magic boat!",
+       "path": "LATER",
+       "subject": "Pip",
+       "person": "sg",
+       "verb": "make",
+       "ending": "a magic boat."
+      }
+     ]
+    },
+    {
+     "kind": "story",
+     "image": "finale-map.svg",
+     "alt": "The whole secret map, complete",
+     "lines": [
+      "You did it! The map is complete! 🗺️",
+      "Tomorrow we are going to...",
+      "find the magic treasure! Hooray!"
+     ]
+    }
+   ]
+  }
+ ]
+}
