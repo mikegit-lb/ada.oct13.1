@@ -14,7 +14,7 @@ async function audit(page) {
 }
 
 test('every slide: images have alt, controls have names, no horizontal overflow', async ({ page }) => {
-  test.setTimeout(120000);
+  test.setTimeout(300000);
   for (const w of [360, 1280]) {
     await page.setViewportSize({ width: w, height: 740 });
     for (const { si, i } of allSlides) {

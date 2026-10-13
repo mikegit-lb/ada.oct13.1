@@ -70,7 +70,7 @@ export function mountPathQuiz(root, slide, ctx) {
       el('p', { class: 'prompt', text: `${slide.title} · Gate ${i + 1} of ${slide.scenarios.length}` }),
     ];
     if (finished) {
-      kids.push(el('p', { class: 'clue', text: 'All three gates are open! Hooray!' }));
+      kids.push(el('p', { class: 'clue', text: `All ${slide.scenarios.length} gates are open! Hooray!` }));
     } else {
       kids.push(img(s.image, s.alt, 'scene'), el('p', { class: 'clue', text: s.clue }));
       if (pathPick == null) {

@@ -22,3 +22,9 @@ A static, kid-friendly lesson site that teaches the two uses of the Present Cont
 ## Deep links (demos and tests)
 
 `/?stage=2&slide=4` (zero-based) jumps straight to a slide.
+
+## Lesson length
+
+- Every slide in `data/content.json` has an `est` (seconds a 10-year-old A1 learner needs, including reading and retries).
+- The finale shows the total ("This lesson takes about 59 minutes"); `tests/content.test.js` keeps the sum within 3300-3900 s and each stage near its share (hook 10%, now 30%, later 35%, challenge 25%).
+- Current estimate: about 59 minutes, 66 activities (Stage 4 gates: 13 across 5 path quizzes).

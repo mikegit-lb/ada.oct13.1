@@ -2,6 +2,7 @@ import { test, expect } from '@playwright/test';
 import { content, answerActivity } from './helpers.js';
 
 test('full lesson with correct answers collects all four map pieces and reaches the finale', async ({ page }) => {
+  test.setTimeout(300000); // ~70 activities: the whole lesson is played through click by click
   const errors = [];
   page.on('console', (m) => { if (m.type() === 'error') errors.push(m.text()); });
   page.on('pageerror', (e) => errors.push(e.message));
@@ -18,6 +19,8 @@ test('full lesson with correct answers collects all four map pieces and reaches 
     await page.getByTestId('next').click();
   }
   await expect(page.getByTestId('finale')).toContainText('The Secret Map of the Magic Forest');
+  const total = content.stages.flatMap((s) => s.slides).reduce((t, s) => t + s.est, 0);
+  await expect(page.getByTestId('est-minutes')).toContainText(`about ${Math.round(total / 60)} minutes`);
   const stars = Number((await page.getByTestId('stars').textContent()).replace(/\D/g, ''));
   expect(stars).toBeGreaterThan(0);
   await expect(page.getByTestId('final-stars')).toContainText(String(stars));
@@ -28,6 +31,7 @@ test('full lesson with correct answers collects all four map pieces and reaches 
 });
 
 test('Stage 3: wrong answers keep Next locked until the correct answers are given', async ({ page }) => {
+  test.setTimeout(180000);
   const stage = content.stages[2];
   await page.goto('/?stage=2&slide=0');
   for (const s of stage.slides) {

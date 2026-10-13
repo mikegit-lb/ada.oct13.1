@@ -80,6 +80,8 @@ function showStageDone() {
   setNext(true, state.stageIndex === 3 ? 'See the map' : 'Next stage');
 }
 
+const lessonMinutes = () => Math.round(content.stages.flatMap((s) => s.slides).reduce((t, s) => t + (s.est || 0), 0) / 60);
+
 function showFinale() {
   $('[data-testid=progress]').textContent = 'THE END';
   $('[data-testid=back]').disabled = true;
@@ -87,6 +89,7 @@ function showFinale() {
     el('h2', { text: content.title }),
     el('div', { class: 'finale-map' }, [1, 2, 3, 4].map((n) => img(`map-piece-${n}.svg`, `Map piece ${n}`))),
     el('p', { class: 'finale-stars', 'data-testid': 'final-stars', text: `You collected ${state.stars} stars!` }),
+    el('p', { class: 'finale-time', 'data-testid': 'est-minutes', text: `This lesson takes about ${lessonMinutes()} minutes.` }),
     el('button', { class: 'btn btn-main', type: 'button', 'data-testid': 'play-again', text: 'Play again',
       onclick() { state.reset(); done.clear(); screen = 'lesson'; idx = 0; show(); } })));
   setNext(false, 'The End');
